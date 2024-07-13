@@ -1,0 +1,121 @@
+
+.welcome{
+    height: 90%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.text h1{
+    color: #00ADB5;
+    font-weight: bold;
+}
+
+.text span, .text h1, .text button {
+    margin-bottom: 18px; 
+  }
+
+.text span{
+    color: #EEEEEE;
+}
+
+.text .btn{
+    background-color: #00ADB5;
+    font-size: 15px;
+    font-weight: bold;
+    color: #393E46;
+    border-radius: 15px;
+    padding: 10px 20px;
+    animation: fade-up 0.5s 0.4s backwards;
+}
+
+.text .btn img{
+    height: auto;
+    width: 25px;
+}
+
+.text .btn:hover{
+    background-color: #393E46;
+    color: #00ADB5;
+    transform: scale(1.10);
+}
+
+.gambar img{
+    border-radius: 15%;
+    height: auto;
+    width: 450px;
+    box-shadow: 0 4px 10px #00ADB5;
+}
+
+.text .sosmed{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.sosmed img{
+    width: 20px;
+    height: auto;
+}
+.sosmed img:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+   .welcome{
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+   } 
+
+   .text{
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -300px; */
+   }
+
+   .gambar img{
+    border-radius: 15%;
+    height: auto;
+    width: 400px;
+    box-shadow: 0 4px 10px #00ADB5;
+    margin-top: 30px;
+    padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gambar img{
+     border-radius: 15%;
+     height: auto;
+     width: 300px;
+     box-shadow: 0 4px 10px #00ADB5;
+     margin-top: 30px;
+     padding: 0;
+    }
+
+    .text{
+        margin-top: -200px;
+       }
+ }
+
+@media screen and (max-width: 430px) {
+    .gambar img{
+        height: auto;
+        width: 200px;
+        margin-top: 30px;
+       }
+
+    .text{
+        margin-top: 20px;
+    }
+}

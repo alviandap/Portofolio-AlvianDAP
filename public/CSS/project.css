@@ -1,0 +1,88 @@
+.contain{
+    padding-top: 70px;
+    text-align: center;
+    color: #eeeeeed4; 
+}
+
+.listproject{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.listproject .card {
+    border-radius: 5px;
+    border-color: black ;
+    background-color: #393E46;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30rem; 
+}
+
+.listproject .card:hover {
+    transform: scale(1.15);
+}
+
+.listproject .card img{
+    border-radius: 10px;
+}
+
+.listproject .card .card-body{
+    color: EEEEEE;
+}
+
+.card-body .card-title{
+    font-weight: bold;
+}
+
+.card-body p{
+    font-size: 15px;
+    text-align: justify;
+}
+.card .btn{
+    background-color: #00ADB5;
+    border: none;
+}
+
+.card .btn:hover{
+    background-color: #04848a;
+}
+
+@media screen and (max-width: 1000px) {
+    .listproject{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contain h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .listproject .card {
+        border-radius: 5px;
+        border-color: black ;
+        background-color: #393E46;
+        padding: 10px;
+        border-radius: 10px;
+        width: 30rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .listproject .card {
+        border-radius: 5px;
+        border-color: black ;
+        background-color: #393E46;
+        padding: 10px;
+        border-radius: 10px;
+        width: 20rem; 
+    }
+
+    .listproject .card:hover {
+        transform: scale(1.10);
+    }
+}

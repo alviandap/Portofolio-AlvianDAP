@@ -1,0 +1,178 @@
+
+.about .card{
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #393E46;
+    color: #EEEEEE;
+}
+.about-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-title{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+  
+.about-title .line {
+    display: inline-block;
+    margin-left: 15px;
+    width: 300px; 
+    height: 3px;
+    background-color: #EEEEEE; 
+}
+
+.contain{
+    padding: 20px;
+    display:flex;
+    align-items: flex-start;
+}
+
+.gambar{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gambar img{
+    border-radius: 50%;
+    height: auto;
+    width: 300px;
+    box-shadow: 0 4px 10px #00ADB5;
+}
+
+.text{
+    width: 60%;
+    height: auto;
+    padding-right: 90px;
+}
+
+.text p{
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.skill .nav-link.active {
+    background-color: #00ADB5;
+    border-radius: 30px;
+    animation: fade-up 0.5s 0.4s backwards;
+}
+
+.skill .nav-link.active span {
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+.skill .nav-link span {
+    color: #eeeeee71;
+}
+
+.skill h3{
+    color: #EEEEEE;
+}
+
+.about-skill {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-skill{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.about-skill .line {
+    display: inline-block;
+    width: 90px; 
+    height: 2px;
+    background-color: #EEEEEE; 
+    margin-right: 10px;
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-pane button{
+    width: 20%;
+    margin-top: 40px;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px #00ADB5;
+    background-color: #D9D9D9;
+    color: #000000;
+    /* border-color: #000000; */
+}
+
+.tab-pane button img{
+    width: 45px;
+    height: auto;
+    margin-right: 15px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 1100px) {
+    .text{
+        margin: 0;
+        padding: 0;
+    }
+
+    .gambar img{
+        width: 200px;
+        height: auto;
+    }
+ }
+ 
+ @media screen and (max-width: 1000px) {
+    .column {
+        flex-wrap: wrap;
+    }
+
+    .tab-pane button {
+        width: 48%; /* Adjust width to fit 2 buttons per row */
+        margin-top: 20px;
+    }
+    .about{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+
+    .card{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .text p{
+        text-indent: 40px;
+        text-align: justify;
+    }
+
+    .about{
+        margin: 0;
+        padding: 0;
+    }
+}

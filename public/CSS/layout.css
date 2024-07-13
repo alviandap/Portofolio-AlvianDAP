@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: #222831 ;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+a.navbar-brand img{
+    width: 50px;
+    height: auto;
+}
+.navbar-nav .nav-link {
+    color: #eeeeeed4; 
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1e8489;
+}
+
+.navbar-nav .nav-link.active {
+    color: #00ADB5;
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #888888;
+}
+
+.navbar img{
+    height: auto;
+    width: 40px;
+    margin-left: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-brand img{
+        margin: 0;
+    }
+
+    .navbar .iconGithub img{
+        display: none;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Add this line to move the toggle button to the right */
+    }
+    .navbar-toggler {
+    margin-left: auto; /* Move the toggle button to the right */
+    border-color: transparent; /* Hide the default border */
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .navbar-collapse {
+        text-align: right; /* Align the collapse content to the right */
+    }
+
+    .navbar-nav {
+        background-color:  #888888;
+        margin-right: 0;
+        margin-left: auto; /* Move the navbar items to the right */
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+}
+ 
+ @media screen and (max-width: 768px) {
+  }
